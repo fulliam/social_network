@@ -9,12 +9,16 @@
 ```bash
 git clone https://github.com/fulliam/social_network.git
 ```
+#### Перейти в папку репозитория  
+```bash
+cd /social_network
+```
 ### Установить зависимости  
 ```bash
 pip instal -r requirements.txt
 ```
-## Установить PostgreSQL  
-### Создать базу данных  
+## Создать базу данных, роль и подключить uuid   
+>*нужна установленная PostgreSQL*  
 **Вход под суперпользователем**  
 ```bash
 sudo su postgres
@@ -44,7 +48,8 @@ GRANT ALL PRIVILEGES ON DATABASE social_net TO net_admin;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
 ### Создать в корневом каталоге репозитория файл .env  
-**Содержимое файла .env:**  
+**Содержимое файла:**  
+```bash
 *ALGORITHM = HS256*  
 *SECRET_KEY = mysecretkey*  
 *DB_USER = net_admin*  
@@ -52,6 +57,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 *DB_HOST = localhost*  
 *DB_PORT = 5432*  
 *DB_NAME = social_net*  
+```
 ### Создать таблицы  
 >*из корневого каталога репозитория*  
 ```bash
@@ -63,5 +69,5 @@ python3 create_table.py
 python3 API.py
 ```
 ## Открыть документацию Swagger или воспользоваться curl-запросами  
-`http://127.0.0.1:5050/docs`  
+(http://127.0.0.1:5050/docs)  
 # Вы великолепны!
