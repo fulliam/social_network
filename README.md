@@ -18,7 +18,6 @@ cd /social_network
 pip instal -r requirements.txt
 ```
 ## Создать базу данных, роль и подключить uuid   
->*нужна установленная PostgreSQL*<  
 **Вход под суперпользователем**  
 ```bash
 sudo su postgres
