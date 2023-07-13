@@ -7,41 +7,41 @@
 ## Чтобы протестировать его работу Вам необходимо:  
 ### Клонировать репозиторий  
 ```bash
-`git clone https://github.com/fulliam/social_network.git`  
+git clone https://github.com/fulliam/social_network.git
 ```
 ### Установить зависимости  
 ```bash
-`pip instal -r requirements.txt`  
+pip instal -r requirements.txt
 ```
 ## Установить PostgreSQL  
 ### Создать базу данных  
 **Вход под суперпользователем**  
 ```bash
-**`sudo su postgres`**  
+sudo su postgres
 ```
 **Запуск psql**  
 ```bash
-**`psql`**  
+psql
 ```
 **Создать базу данных**  
 ```bash
-**`CREATE DATABASE social_net;`**  
+CREATE DATABASE social_net;
 ```
 **Создать роль для базы данных**  
 ```bash
-**`CREATE USER net_admin WITH LOGIN PASSWORD 'password';`**  
+CREATE USER net_admin WITH LOGIN PASSWORD 'password';
 ```
 **Выдать все права на базу данных для роли**  
 ```bash
-**`GRANT ALL PRIVILEGES ON DATABASE social_net TO net_admin;`**  
+GRANT ALL PRIVILEGES ON DATABASE social_net TO net_admin;
 ```
 **Подключиться к базе данных**  
 ```bash
-**`\c social_net`**  
+\c social_net
 ```
 **Подключить расширение uuid для базы данных**  
 ```bash
-**`CREATE EXTENSION IF NOT EXISTS "uuid-ossp";`**  
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
 ### Создать в корневом каталоге репозитория файл .env  
 **Содержимое файла .env:**  
@@ -55,12 +55,12 @@
 ### Создать таблицы  
 >*из корневого каталога репозитория*  
 ```bash
-**`python3 create_table.py`**  
+python3 create_table.py
 ```
 ### Запустить API  
 >*из корневого каталога репозитория*  
 ```bash
-**`python3 API.py`**  
+python3 API.py
 ```
 ## Открыть документацию Swagger или воспользоваться curl-запросами  
 `http://127.0.0.1:5050/docs`  
