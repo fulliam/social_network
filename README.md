@@ -1,6 +1,6 @@
 # REST API для создания, редактирования, удаления и оценки сообщений и постов  
 ## Технологии
-![Python](https://img.shields.io/badge/python_3.11-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/python_3.9-3670A0?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-005571?style=for-the-badge)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
