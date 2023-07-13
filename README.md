@@ -49,13 +49,13 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ### Создать в корневом каталоге репозитория файл .env  
 **Содержимое файла:**  
 ```bash
-*ALGORITHM = HS256*  
-*SECRET_KEY = mysecretkey*  
-*DB_USER = net_admin*  
-*DB_PASS = password*  
-*DB_HOST = localhost*  
-*DB_PORT = 5432*  
-*DB_NAME = social_net*  
+ALGORITHM = HS256
+SECRET_KEY = mysecretkey
+DB_USER = net_admin
+DB_PASS = password
+DB_HOST = localhost
+DB_PORT = 5432
+DB_NAME = social_net
 ```
 ### Создать таблицы  
 >*из корневого каталога репозитория*  
@@ -68,5 +68,5 @@ python3 create_table.py
 python3 API.py
 ```
 ## Открыть документацию Swagger или воспользоваться curl-запросами  
-(http://127.0.0.1:5050/docs)  
+http://127.0.0.1:5050/docs  
 # Вы великолепны!
